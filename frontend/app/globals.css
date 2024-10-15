@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav_links{
+  @apply hover:border-b transition-all lg:text-lg text-sm  pb-2
+}
+
+*{
+  user-select: none !important;;
+}
+img{
+  -webkit-user-drag: none;
+}
+
+
+.hide-scroll::-webkit-scrollbar{
+
+display: none;
+}
+.hide-scroll {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
