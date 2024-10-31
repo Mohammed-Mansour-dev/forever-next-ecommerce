@@ -68,11 +68,6 @@ useEffect(()=>{
 visbility_()
 },[path])
 
-useEffect(()=>{
-if(path){
-  setActiveNav(path)
-}
-},[])
 
 
 
