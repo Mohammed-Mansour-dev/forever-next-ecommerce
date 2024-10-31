@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav_links{
+  @apply  transition-all lg:text-lg text-sm  pb-2
+}
+
+*{
+  user-select: none !important;;
+}
+img{
+  -webkit-user-drag: none;
+}
+
+
+.hide-scroll::-webkit-scrollbar{
+
+display: none;
+}
+.hide-scroll {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.half-border-bottom::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  border-bottom: 2px solid #C886A4;
+}
