@@ -12,7 +12,7 @@ import OurAdvantages from "./_components/OurAdvantages";
 export const backendUrl =process.env.NEXT_PUBLIC_SERVER_URL;
 
 export default function Home() {
-
+console.log("Home");
 
   return (
 <>
