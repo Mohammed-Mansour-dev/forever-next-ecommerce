@@ -202,7 +202,7 @@ myOrdersData && (
       <h1 className="text-2xl font-outfit text-dark text-center">
       <div className="flex items-center justify-center h-screen ">
     <h1 className="text-2xl font-outfit text-dark text-center">
-    <div class="w-10 h-10 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
+    <div className="w-10 h-10 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
     </h1>
   </div>
         You May Need to Login Again

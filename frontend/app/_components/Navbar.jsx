@@ -80,7 +80,7 @@ visbility_()
      <div className="flex max-md:px-4 border-b border-gray-300 justify-between px-2 py-4 items-center ">
         {/* logo */}
         <Link href="/" >
-          <Image src={assets.logo} alt="logo" className="w-32" />
+          <Image priority src={assets.logo} alt="logo" className="w-32" />
         </Link>
 
         {/* web  navs */}
@@ -161,6 +161,7 @@ Signout
 {/* bag icon */}
 <Link href="/cart" className="relative cursor-pointer " >
 <Image
+priority
  className="size-5"
 src={assets.cart_icon} alt="search icon" />
 <span className="absolute size-4 text-[9px] text-center flex justify-center items-center p-1 text-white rounded-full top-0 left-3 bg-[#C886A4] " >

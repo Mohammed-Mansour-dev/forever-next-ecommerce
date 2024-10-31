@@ -66,14 +66,14 @@ const Page = () => {
               
                   <Image
 
-                
+                priority
                     key={index}
                     src={image}
                     width={150}
                     height={250}
                     onClick={() => setMainImage(image)}
                     alt="product image  "
-                    className="rounded-md cursor-pointer  max-sm:w-[40%] object-contain lg:w-28 max-sm:!max-w-[27%] h-[24%] "
+                    className="rounded-md cursor-pointer  max-sm:w-[40%] object-contain w-auto lg:w-28 max-sm:!max-w-[27%] h-[24%] "
                   />
                
                 ))}
@@ -84,6 +84,7 @@ const Page = () => {
                animate={{ opacity: 1, x: 0 }}
                transition={{ duration: 0.9 ,delay:.2 }} className={` ${!mainImage && "animate-pulse bg-gray-300 rounded"} flex-1 `}>
                 <Image
+                priority
                     width={350}
                     height={550}
                   src={mainImage}
@@ -110,6 +111,7 @@ const Page = () => {
                transition={{ duration: 0.9, delay:.2 }} className="flex gap-1 items-center ">
                   {[1, 2, 3, 4].map((item) => (
                     <Image
+                    key={item}
                       className="w-4 h-4"
                       src={assets.star_icon}
                       alt="star icon"
@@ -256,7 +258,7 @@ const Page = () => {
       ):(
         <div className="flex items-center justify-center h-screen ">
         <h1 className="text-2xl font-outfit text-dark text-center">
-        <div class="w-10 h-10 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
+        <div className="w-10 h-10 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
         </h1>
       </div>
       )}
