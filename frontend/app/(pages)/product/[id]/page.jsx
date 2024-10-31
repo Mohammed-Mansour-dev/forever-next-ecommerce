@@ -30,7 +30,7 @@ const Page = () => {
   }, [id,products]);
 
 
-
+console.log("Hello World!");
 
 
 
