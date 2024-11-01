@@ -6,7 +6,7 @@ import { backendUrl } from "@/app/page";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import { useContext, useEffect, useState } from "react";
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 
 const page = () => {
   const [authCase, setauthCase] = useState("Login");
@@ -110,7 +110,9 @@ if(token){
 
 
   return (
-    // wrapper
+   <>
+   <ToastContainer />
+    {/* // wrapper */}
     <div className="pt-10" >
       {/*  title */}
       <div className="py-14  ">
@@ -175,6 +177,7 @@ if(token){
 
 
     </div>
+   </>
   );
 };
 

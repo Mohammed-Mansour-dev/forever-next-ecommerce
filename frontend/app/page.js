@@ -5,6 +5,7 @@ import Hero from "./_components/Hero";
 import LatestProducts from "./_components/LatestProducts";
 import BestSeller from "./_components/BestSeller";
 import OurAdvantages from "./_components/OurAdvantages";
+import { ToastContainer } from "react-toastify";
 
 
 
@@ -16,7 +17,7 @@ console.log("Home");
 
   return (
 <>
-
+<ToastContainer />
 <div className="px-3 overflow-hidden " >
   <Hero/>
   <LatestProducts />
