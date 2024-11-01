@@ -68,10 +68,8 @@ for(const items in cartItems){
       itemInfo.sizes =item;
       itemInfo.quantity = cartItems[items][item];
       orderItems.push(itemInfo)
-      console.log(orderItems)
     }}}}
 
-console.log(orderItems)
 
 if(orderItems.length <= 0){
   toast.error("No items in cart")

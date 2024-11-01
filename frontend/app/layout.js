@@ -5,7 +5,6 @@ import ShopContextProvider from "./_context/ShopContextProvider";
 import Footer from "./_components/Footer";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Head from "next/head";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",

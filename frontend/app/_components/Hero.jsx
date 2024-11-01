@@ -56,7 +56,7 @@ text-color outfit uppercase   ' >
 {/* right secton */}
 
 <motion.div  initial={{x:250, opacity:0}} animate={{x:0 ,opacity:1 }} transition={{duration:1.2 ,delay:.8}} viewport={{once:true}}  className='w-full md:w-1/2'  >
-  <Image src={assets.hero_img} alt="" />
+  <Image src={assets.hero_img} alt="hero image " priority />
 </motion.div>
 
 

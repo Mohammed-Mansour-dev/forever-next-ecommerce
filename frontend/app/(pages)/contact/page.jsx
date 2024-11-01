@@ -28,7 +28,7 @@ const page = () => {
         {/* img */}
 <div className="w-full md:w-1/2 flex max-md:max-h-[50vh]  md:justify-end ">
 
-    <Image src={assets.contact_img} className='w-full md:w-4/5 max-md:object-cover max-md:mx-auto '   />
+    <Image src={assets.contact_img} className='w-full md:w-4/5 max-md:object-cover max-md:mx-auto ' alt='contact image'  />
 
 </div>
 

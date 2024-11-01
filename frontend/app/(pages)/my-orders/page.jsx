@@ -29,7 +29,7 @@ const getMyOrders_ = async ()=>{
 try {
    setBtnLoading(true)
 const response = await axios.post(backendUrl + "/api/order/userOrders",{},{headers:{token}})
-console.log(response)
+
 if(response){
 if(response.data.success){
 
@@ -52,9 +52,6 @@ allOrderItems.push(orderItem)
 setMyOrdersData(allOrderItems.reverse())
 
 
-}else{
-  console.log("No response orders")
-
 }
 }else{
 console.log("No respo")
@@ -76,7 +73,7 @@ useEffect(()=>{
 },[products ])
 
   return (
-    <>
+    <div className="min-h-screen">
      
     {
 
@@ -211,7 +208,7 @@ myOrdersData && (
     ) 
 }
   
-    </>
+    </div>
 
 
 
