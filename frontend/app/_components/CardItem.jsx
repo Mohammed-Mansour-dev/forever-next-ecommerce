@@ -30,8 +30,8 @@ ease:'easeInOut'
 
 <Link href={`/product/${_id}`} className=' block  transition-all  '  >  
 {/* img */}
-<Image src={img[0]} alt="product image  " width={200} height={300}  className='w-full  h-64 object-contain max-md:object-fill  '  />
-<div className='px-7 py-1 max-md:px-4 ' >
+<Image src={img[0]} alt="product image  " width={200} height={300}  className='w-full  h-64 object-contain   '  />
+<div className='px-7 py-1 max-md:px-4 text-center ' >
   {/* prod name */}
     <h1 className='line-clamp-1 font-normal text-sodark font-outfit text-sm ' >{name}</h1>
     {/* price */}
